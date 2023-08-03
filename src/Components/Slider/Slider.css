@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.slider{
+    background-color: #1E1E1E;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.item{
+    min-width: 25%;
+    pointer-events:none ;
+}
+.item img{
+    width: 80%;
+    border-radius:  1rem;
+    margin-top: 10%;
+    border: 4px solid #58805a;
+}
+.inner-carousel{
+    display: flex;
+    padding: top 10%;
+}
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+}
+@media only screen and (max-width: 1000px) {
+    .item img{
+        width: 100%;
+        border-radius:  5rem;
+        margin-top: 50%;
+    }
+    .item{
+        min-height: 5rem;
+        min-width: 10%;
+        padding: 5px;
+        pointer-events:none ;
+    }
+}
